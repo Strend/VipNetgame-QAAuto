@@ -133,6 +133,15 @@ namespace VipNetgame_QAAuto {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 0637777777.
+        /// </summary>
+        internal static string InputNumberFail {
+            get {
+                return ResourceManager.GetString("InputNumberFail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 121212qwerty.
         /// </summary>
         internal static string InputPassword {

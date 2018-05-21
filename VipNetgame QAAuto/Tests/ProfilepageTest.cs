@@ -28,7 +28,6 @@ namespace VipNetgame_QAAuto.Tests
             Registration regmail = new Registration();
             regmail.EnterRegButton.Click();
             regmail.RegistrationMail(rnd.Next().ToString() + "@mail.ru", false);
-            //Thread.Sleep(3000);
             Random rand = new Random();
             Profilepage data = new Profilepage();
             data.PrifileButton.Click();

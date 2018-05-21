@@ -25,7 +25,6 @@ namespace VipNetgame_QAAuto.Tests
         public void PopolnenieCasa()
         {
             MainPage Login = new MainPage();
-            //Thread.Sleep(5000);
             Login.EnterButton.Click();
             Login.InputLoginMail.SendKeys(TestData.InputLogin);
             Login.InputPassword.SendKeys(TestData.InputPassword);
@@ -78,7 +77,6 @@ namespace VipNetgame_QAAuto.Tests
         public void CPChange()
         {
             MainPage Login = new MainPage();
-            //Thread.Sleep(5000);
             Login.EnterButton.Click();
             Login.InputLoginMail.SendKeys(TestData.InputLogin);
             Login.InputPassword.SendKeys(TestData.InputPassword);
@@ -99,7 +97,6 @@ namespace VipNetgame_QAAuto.Tests
         public void OtmenaViplati()
         {
             MainPage Login = new MainPage();
-            //Thread.Sleep(5000);
             Login.EnterButton.Click();
             Login.InputLoginMail.SendKeys(TestData.InputLogin);
             Login.InputPassword.SendKeys(TestData.InputPassword);

@@ -45,6 +45,22 @@ namespace VipNetgame_QAAuto.Tests
             StringAssert.AreEqualIgnoringCase("Восстановление пароля", rempass.Popupremindsuccess.Text);
         }
 
+        [Test]
+        public void RemindPasswordSuccessPhone()
+        {
+            MainPage rempass = new MainPage();
+            rempass.EnterButton.Click();
+            rempass.EnterButtonPhone.Click();
+            rempass.SelectFlagNumber.Click();
+            rempass.SelectFlagUA.Click();
+            rempass.InputLoginMail.Clear();
+            rempass.InputLoginMail.SendKeys(TestData.InputNumberFail);
+            rempass.InputPassword.SendKeys(TestData.InputPassword);
+            rempass.RemindPassword.Click();
+
+            StringAssert.AreEqualIgnoringCase("Восстановление пароля", rempass.Popupremindsuccess.Text);
+        }
+
 
         [Test]
         public void EnterPhone()
