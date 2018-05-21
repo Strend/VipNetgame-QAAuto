@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VipNetgame QAAuto", "VipNetgame QAAuto\VipNetgame QAAuto.csproj", "{945602EB-5922-488B-B476-2D969A9CD845}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetGameUIAuto", "VipNetgame QAAuto\NetGameUIAuto.csproj", "{945602EB-5922-488B-B476-2D969A9CD845}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
