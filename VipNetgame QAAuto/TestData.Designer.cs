@@ -178,6 +178,15 @@ namespace VipNetgame_QAAuto {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to fire.
+        /// </summary>
+        internal static string Nickname {
+            get {
+                return ResourceManager.GetString("Nickname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to +380506452401.
         /// </summary>
         internal static string OkLogin {

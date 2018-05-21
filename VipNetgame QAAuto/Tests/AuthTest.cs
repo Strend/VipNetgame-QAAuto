@@ -35,7 +35,7 @@ namespace VipNetgame_QAAuto.Tests
         }
 
         [Test]
-        public void Remindpasswordsuccess()
+        public void RemindPasswordSuccess()
         {
             MainPage rempass = new MainPage();
             rempass.EnterButton.Click();

@@ -75,7 +75,6 @@ namespace VipNetgame_QAAuto.Pages
 
         public void RegistrationMail(string login, bool all)
         {
-           // Driver.Browser.Url = TestData.MainPageURL;
             RegInputMail.SendKeys(login);
             RegInputPassword.SendKeys(TestData.FacebookPass);
             RegChackboxUA.Click();

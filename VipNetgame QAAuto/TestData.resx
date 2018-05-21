@@ -156,6 +156,9 @@
   <data name="MainPageURL" xml:space="preserve">
     <value>http://stage.vipnetgame.com/</value>
   </data>
+  <data name="Nickname" xml:space="preserve">
+    <value>fire</value>
+  </data>
   <data name="OkLogin" xml:space="preserve">
     <value>+380506452401</value>
   </data>
