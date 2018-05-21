@@ -55,14 +55,12 @@ namespace VipNetgame_QAAuto.Tests
         public void VivodCasa()
         {
             MainPage Login = new MainPage();
-            //Thread.Sleep(5000);
             Login.EnterButton.Click();
             Login.InputLoginMail.SendKeys(TestData.InputLogin);
             Login.InputPassword.SendKeys(TestData.InputPassword);
             Login.EnterButtonSubmit.Click();
             Cashbox replish = new Cashbox();
             replish.CashboxButton.Click();
-            //replish.CashboxPopup.Click();
             Driver.Browser.SwitchTo().Frame("frame-cash");
             replish.CashboxPopupWithdrawButton.Click();
             replish.CashboxPopupSelectW.Click();
