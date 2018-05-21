@@ -138,11 +138,14 @@
   <data name="InputLoginfail" xml:space="preserve">
     <value>djust_test1@mail.ru</value>
   </data>
-  <data name="InputNumber" xml:space="preserve">
-    <value>506452401</value>
-  </data>
   <data name="InputNumberFail" xml:space="preserve">
     <value>0637777777</value>
+  </data>
+  <data name="InputNumberRU" xml:space="preserve">
+    <value>9159330236</value>
+  </data>
+  <data name="InputNumberUA" xml:space="preserve">
+    <value>506452401</value>
   </data>
   <data name="InputPassword" xml:space="preserve">
     <value>121212qwerty</value>

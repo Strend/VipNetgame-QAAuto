@@ -71,11 +71,25 @@ namespace VipNetgame_QAAuto.Tests
             login.SelectFlagNumber.Click();
             login.SelectFlagUA.Click();
             login.InputLoginMail.Clear();
-            login.InputLoginMail.SendKeys(TestData.InputNumber);
+            login.InputLoginMail.SendKeys(TestData.InputNumberUA);
             login.InputPassword.SendKeys(TestData.InputPasswordNumber);
             login.EnterButtonSubmit.Click();
             Profilepage header = new Profilepage();
             StringAssert.AreEqualIgnoringCase("Выход", header.Profileheader.Text); 
+        }
+
+        [Test]
+        public void EnterPhoneRU()
+        {
+            MainPage login = new MainPage();
+            login.EnterButton.Click();
+            login.EnterButtonPhone.Click();
+            login.InputLoginMail.Clear();
+            login.InputLoginMail.SendKeys(TestData.InputNumberRU);
+            login.InputPassword.SendKeys(TestData.InputPasswordNumber);
+            login.EnterButtonSubmit.Click();
+            Profilepage header = new Profilepage();
+            StringAssert.AreEqualIgnoringCase("Выход", header.Profileheader.Text);
         }
 
         [Test]

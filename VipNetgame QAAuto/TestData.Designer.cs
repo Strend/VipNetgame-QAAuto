@@ -124,20 +124,29 @@ namespace VipNetgame_QAAuto {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 506452401.
-        /// </summary>
-        internal static string InputNumber {
-            get {
-                return ResourceManager.GetString("InputNumber", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to 0637777777.
         /// </summary>
         internal static string InputNumberFail {
             get {
                 return ResourceManager.GetString("InputNumberFail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 9159330236.
+        /// </summary>
+        internal static string InputNumberRU {
+            get {
+                return ResourceManager.GetString("InputNumberRU", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 506452401.
+        /// </summary>
+        internal static string InputNumberUA {
+            get {
+                return ResourceManager.GetString("InputNumberUA", resourceCulture);
             }
         }
         
