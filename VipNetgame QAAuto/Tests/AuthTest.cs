@@ -24,7 +24,6 @@ namespace VipNetgame_QAAuto.Tests
         public void EnterMail()
         {
             MainPage Login = new MainPage();
-            //Thread.Sleep(5000);
             Login.EnterButton.Click();
             Login.InputLoginMail.SendKeys(TestData.InputLogin);
             Login.InputPassword.SendKeys(TestData.InputPassword);
@@ -59,7 +58,6 @@ namespace VipNetgame_QAAuto.Tests
             login.InputLoginMail.SendKeys(TestData.InputNumber);
             login.InputPassword.SendKeys(TestData.InputPasswordNumber);
             login.EnterButtonSubmit.Click();
-            //Thread.Sleep(5000);
             Profilepage header = new Profilepage();
             StringAssert.AreEqualIgnoringCase("Выход", header.Profileheader.Text); 
         }

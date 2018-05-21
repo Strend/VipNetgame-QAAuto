@@ -22,13 +22,13 @@ namespace VipNetgame_QAAuto.Tests
 
 
         [Test]
-        public void ProfileDataEnter()
+        public void ProfileDataInformation()
         {
             Random rnd = new Random();
             Registration regmail = new Registration();
             regmail.EnterRegButton.Click();
             regmail.RegistrationMail(rnd.Next().ToString() + "@mail.ru", false);
-            Thread.Sleep(5000);
+            //Thread.Sleep(3000);
             Random rand = new Random();
             Profilepage data = new Profilepage();
             data.PrifileButton.Click();
@@ -56,14 +56,52 @@ namespace VipNetgame_QAAuto.Tests
             data.EnterPhone("500208" + rand.Next(100, 999).ToString(), true);
             data.ProfileMyDataPlayerButtonSubmit.Click();
             StringAssert.Contains("Ваш профиль успешно сохранен.", data.ProfileMyDataPopupSuccess.Text);
-            data.ProfileMyDataPopupSuccessButton.Click();
+            
+                        
+        }
+
+        [Test]
+        public void ProfileDataConfirmMail()
+        {
+            Random rnd = new Random();
+            Registration regmail = new Registration();
+            regmail.EnterRegButton.Click();
+            regmail.RegistrationMail(rnd.Next().ToString() + "@mail.ru", false);
+            Thread.Sleep(3000);
+            Random rand = new Random();
+            Profilepage data = new Profilepage();
+            data.PrifileButton.Click();
+            MainPage scroll = new MainPage();
             scroll.Scroll_center();
             data.ProfileMyDataSendConfirmMail.Click();
             StringAssert.Contains("Готово! Код подтверждения выслан на указанный E-Mail", data.ProfileMyDataSendConfirmMailPopupSucess.Text);
-            data.ProfileMyDataSendConfirmMailPopupSucessButton.Click();
+            
+
+        }
+
+        [Test]
+        public void ProfileDataConfirmPhone()
+        {
+            Random rnd = new Random();
+            Registration regmail = new Registration();
+            regmail.EnterRegButton.Click();
+            regmail.RegistrationMail(rnd.Next().ToString() + "@mail.ru", false);
+            Thread.Sleep(3000);
+            Random rand = new Random();
+            Profilepage data = new Profilepage();
+            data.PrifileButton.Click();
+            MainPage scroll = new MainPage();
+            scroll.Scroll_center();
+            data.ProfileMyDataPlayerSelectFlagNumber.Click();
+            data.ProfileMyDataPlayerSelectFlagUkraine.Click();
+            data.EnterPhone("500208" + rand.Next(100, 999).ToString(), true);
+            data.ProfileMyDataPlayerButtonSubmit.Click();
+            data.ProfileMyDataPopupSuccessButton.Click();
+            scroll.Scroll_center();
             data.ProfileMyDataSendConfirmPhone.Click();
             StringAssert.Contains("Готово! Код подтверждения выслан на указанный номер телефона", data.ProfileMyDataSendConfirmPhonePopupSucces.Text);
-                        
+
+
         }
 
         [TearDown]
@@ -76,3 +114,5 @@ namespace VipNetgame_QAAuto.Tests
         public void AfterTestSuit() { }
     }
 }
+
+
