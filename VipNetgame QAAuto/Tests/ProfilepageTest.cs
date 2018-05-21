@@ -56,8 +56,14 @@ namespace VipNetgame_QAAuto.Tests
             data.EnterPhone("500208" + rand.Next(100, 999).ToString(), true);
             data.ProfileMyDataPlayerButtonSubmit.Click();
             StringAssert.Contains("Ваш профиль успешно сохранен.", data.ProfileMyDataPopupSuccess.Text);
-            
-
+            data.ProfileMyDataPopupSuccessButton.Click();
+            scroll.Scroll_center();
+            data.ProfileMyDataSendConfirmMail.Click();
+            StringAssert.Contains("Готово! Код подтверждения выслан на указанный E-Mail", data.ProfileMyDataSendConfirmMailPopupSucess.Text);
+            data.ProfileMyDataSendConfirmMailPopupSucessButton.Click();
+            data.ProfileMyDataSendConfirmPhone.Click();
+            StringAssert.Contains("Готово! Код подтверждения выслан на указанный номер телефона", data.ProfileMyDataSendConfirmPhonePopupSucces.Text);
+                        
         }
 
         [TearDown]

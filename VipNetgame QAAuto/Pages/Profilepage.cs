@@ -214,6 +214,62 @@ namespace VipNetgame_QAAuto.Pages
             }
         }
 
+        public IWebElement ProfileMyDataPopupSuccessButton
+        {
+            get
+            {
+                Driver.WaitUntil(By.XPath("//*[@id='popup-profile-success']/div/div/div[2]/div[1]/button"));
+                return Driver.Browser.FindElement(By.XPath("//*[@id='popup-profile-success']/div/div/div[2]/div[1]/button"));
+            }
+        }
+
+        public IWebElement ProfileMyDataSendConfirmMail
+        {
+            get
+            {
+                Driver.WaitUntil(By.XPath("//*[@id='profile-form']/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/button"));
+                return Driver.Browser.FindElement(By.XPath("//*[@id='profile-form']/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/button"));
+            }
+        }
+
+        public IWebElement ProfileMyDataSendConfirmMailPopupSucess
+        {
+            get
+            {
+                Driver.WaitUntil(By.XPath("//*[@id='popup-confirm']/div/div/div[2]/p"));
+                return Driver.Browser.FindElement(By.XPath("//*[@id='popup-confirm']/div/div/div[2]/p"));
+            }
+        }
+
+        public IWebElement ProfileMyDataSendConfirmMailPopupSucessButton
+        {
+            get
+            {
+                Driver.WaitUntil(By.XPath("//*[@id='popup-confirm']/div/div/div[2]/div[1]/button"));
+                return Driver.Browser.FindElement(By.XPath("//*[@id='popup-confirm']/div/div/div[2]/div[1]/button"));
+            }
+        }
+
+
+        public IWebElement ProfileMyDataSendConfirmPhone
+        {
+            get
+            {
+                Driver.WaitUntil(By.XPath("//*[@id='profile-form']/div[1]/div[1]/div[3]/div[2]/div[1]/div[3]/button"));
+                return Driver.Browser.FindElement(By.XPath("//*[@id='profile-form']/div[1]/div[1]/div[3]/div[2]/div[1]/div[3]/button"));
+            }
+        }
+
+        public IWebElement ProfileMyDataSendConfirmPhonePopupSucces
+        {
+            get
+            {
+                Driver.WaitUntil(By.XPath(" //*[@id='popup-confirm']/div/div/div[2]/p"));
+                return Driver.Browser.FindElement(By.XPath(" //*[@id='popup-confirm']/div/div/div[2]/p"));
+            }
+        }
+
+       
         public void NameEnter (string nickname, bool all)
         {
             ProfileMyDataName.SendKeys(nickname);
